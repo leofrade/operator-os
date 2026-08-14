@@ -29,9 +29,9 @@ This repository is the missing half. Every file is a **decision procedure** — 
 an operator actually runs, with the thresholds that say whether a move worked and the
 failure modes that say when to stop. Not summaries. Not prompts. Procedures.
 
-I run three things at once: a RegTech company as CEO, an AI-focused venture studio as
-partner and portfolio manager, and two board seats. These are the files I use to do that.
-They are the reason I can hold that surface area without a chief of staff.
+I am partner at two startup studios — one focused on blockchain, one on AI — plus two
+board seats. Somewhere around a dozen ventures at different stages, most with founders who
+are not me. These are the files I use to hold that surface area without a chief of staff.
 
 ## What this is not
 
@@ -270,9 +270,10 @@ A failure mode discovered in a real company is worth more than a new skill.
 
 ## Who wrote this
 
-**Leonardo Frade** — CEO at a RegTech company in the compliance and logistics space,
-partner and portfolio manager at [Her0 Studio](https://her0.io), an AI-focused venture
-studio, and board member at two Brazilian companies.
+**Leonardo Frade** — partner at [Khiza](https://khizadao.com), a web3 startup studio,
+and at [Her0](https://her0.io), an AI startup studio where I also run the portfolio. Board
+member at two Brazilian companies. Before that: Director of Expansion at Endeavor Brazil,
+one exit as a founder, and 500 Startups in San Francisco.
 
 I am not an engineer. I am an operator who reorganized how he works around agents, and
 this repository is the substrate that makes that work. If you are a founder trying to
@@ -281,7 +282,7 @@ judgment in files, keep it versioned, make it composable, and stop re-deriving d
 you already made.
 
 - LinkedIn — [in/leofrade](https://www.linkedin.com/in/leofrade/)
-- Her0 Studio — [her0.io](https://her0.io)
+- Her0 — [her0.io](https://her0.io) · Khiza — [khizadao.com](https://khizadao.com)
 
 ## License
 
