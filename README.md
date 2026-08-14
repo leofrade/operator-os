@@ -4,10 +4,10 @@
 
 **The business half of an AI-native founder's toolkit.**
 
-45 executable skills for Claude Code, Claude, Cursor, and any agent that reads Markdown —
+43 executable skills for Claude Code, Claude, Cursor, and any agent that reads Markdown —
 covering discovery, strategy, go-to-market, enterprise sales, operations, and brand.
 
-[![Skills](https://img.shields.io/badge/skills-45-0d1117?style=flat-square)](#the-library)
+[![Skills](https://img.shields.io/badge/skills-43-0d1117?style=flat-square)](#the-library)
 [![Domains](https://img.shields.io/badge/domains-6-0d1117?style=flat-square)](#the-library)
 [![License](https://img.shields.io/badge/docs-CC--BY--4.0-0d1117?style=flat-square)](LICENSE)
 [![Format](https://img.shields.io/badge/format-SKILL.md-0d1117?style=flat-square)](#anatomy-of-a-skill)
@@ -66,7 +66,7 @@ mkdir -p .claude/skills
 cp -R operator-os/skills/*/* .claude/skills/
 ```
 
-Both commands flatten the six domain folders into 45 skill folders, which is the layout
+Both commands flatten the six domain folders into 43 skill folders, which is the layout
 agents expect. One consequence worth knowing: the relative paths in each file's
 **Pairs with** section stop resolving as links once flattened. The names still do their
 job — every entry is written as `domain/skill-name`, so the agent can find the sibling —
@@ -133,7 +133,7 @@ Example, from [`brand/positioning`](skills/brand/positioning/SKILL.md):
 
 ## The library
 
-45 skills across six domains. Stage tags: `pre-pmf`, `gtm`, `scale`, `any`.
+43 skills across six domains. Stage tags: `pre-pmf`, `gtm`, `scale`, `any`.
 
 ### Discovery — before you have product/market fit
 
@@ -176,9 +176,7 @@ Example, from [`brand/positioning`](skills/brand/positioning/SKILL.md):
 | [`lead-engine`](skills/gtm/lead-engine/SKILL.md) | Picks the one acquisition channel your stage can actually sustain, sets the volume and efficiency thresholds that prove it works, and defines the bait that attracts buyers instead of spectators | Alex Hormozi — $100M Leads |
 | [`monetization-model`](skills/gtm/monetization-model/SKILL.md) | Designs the sequence of offers around a first sale so that cash collected in the first 30 days exceeds the cost of acquiring and serving the customer | Alex Hormozi — $100M Money Models |
 | [`offer-design`](skills/gtm/offer-design/SKILL.md) | Rebuilds a commoditized offer into a priced package that cannot be line-item compared, by inventorying the buyer's friction and engineering the gap between perceived value and price | Alex Hormozi — $100M Offers |
-| [`phygital-marketing`](skills/gtm/phygital-marketing/SKILL.md) | Decides where physical presence earns its cost and where digital removes friction, then sequences technology against payback instead of against novelty | Philip Kotler, Hermawan Kartajaya & Iwan Setiawan — Marketing 6.0 |
 | [`pricing-power`](skills/gtm/pricing-power/SKILL.md) | Sets price from evidence of what buyers will pay rather than from competitor averages or cost-plus, by choosing the billing unit first, gathering willingness-to-pay signal at a method appropriate to sample size, and packaging into tiers with a single upgrade gate | Madhavan Ramanujam & Georg Tacke — Monetizing Innovation; Peter van Westendorp — Price Sensitivity Meter; André Gabor & Clive Granger — price-response research |
-| [`video-sales-letter`](skills/gtm/video-sales-letter/SKILL.md) | Engineers video that sells — diagnosing reader awareness and market saturation first, building the mechanism that justifies the claim, choosing length by deal size, and testing modularly against an attention funnel | Eugene Schwartz — Breakthrough Advertising; Stefan Georgi — the RMBC method; Jon Benson — VSL structure; Russell Brunson — Expert Secrets; Todd Brown — Big Idea and E5 |
 
 ### Revenue — enterprise sales execution
 

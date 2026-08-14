@@ -134,7 +134,6 @@ Item 5 is the one teams resist. Positioning that never loses a deal on purpose i
 - [`discovery/customer-interviews`](../../discovery/customer-interviews/SKILL.md) — supplies Moves 1 and 4 in the buyer's words. Without it, positioning is invention.
 - [`gtm/chasm-crossing`](../../gtm/chasm-crossing/SKILL.md) — picks which beachhead to dominate once Move 4 produces candidates.
 - [`brand/purpose-narrative`](../../brand/purpose-narrative/SKILL.md) — supplies the belief that opens the story, once the frame is fixed.
-- [`gtm/phygital-marketing`](../../gtm/phygital-marketing/SKILL.md) — when the position has to hold across a store and an app at once; the seam between them is where the claim usually breaks.
 
 ## Lineage
 

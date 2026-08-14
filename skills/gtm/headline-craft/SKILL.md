@@ -139,7 +139,6 @@ Judge on the downstream number — qualified conversion, reply rate, booked meet
 ## Pairs with
 
 - [`gtm/offer-design`](../../gtm/offer-design/SKILL.md) — supplies the promise. A headline cannot outrun a weak offer, and most headline failures are offer failures presenting as copy failures.
-- [`gtm/video-sales-letter`](../../gtm/video-sales-letter/SKILL.md) — consumes headlines as hooks, where the same awareness read governs the first three seconds.
 - [`revenue/value-messaging`](../../revenue/value-messaging/SKILL.md) — keeps the headline and what a rep says on a call as one argument rather than two.
 - [`gtm/audience-engine`](../../gtm/audience-engine/SKILL.md) — every published piece needs an entry point, and a strong angle still dies behind a weak first line.
 
