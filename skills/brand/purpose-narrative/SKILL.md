@@ -119,6 +119,7 @@ Do not roll it out everywhere. Run it in one channel against the current version
 - [`brand/positioning`](../../brand/positioning/SKILL.md) — establishes the frame this narrative sits on top of; run it first if buyers are comparing you to the wrong things.
 - [`revenue/value-messaging`](../../revenue/value-messaging/SKILL.md) — supplies the proof layer that must follow the belief within ninety seconds.
 - [`brand/presentation-craft`](../../brand/presentation-craft/SKILL.md) — sequences this narrative into slides and decks without letting the belief crowd out the evidence.
+- [`brand/founder-narrative`](../founder-narrative/SKILL.md) — the individual-level counterpart; this file is the company's belief, that one is the person who carries it.
 
 ## Lineage
 

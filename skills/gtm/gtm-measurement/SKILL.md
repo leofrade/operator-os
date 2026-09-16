@@ -36,7 +36,7 @@ Run this before a launch, when instrumentation is cheap and reversible. Run it w
 
 ### Move 1 — Name the one decision the data must support this quarter
 
-Write it as a sentence: "By March we must decide whether to double down on outbound or move the budget to content." Every event and report either serves that decision or is deferred. This constraint is what keeps a tracking plan at twelve events instead of ninety. If you cannot write the sentence, stop — instrumenting without a decision produces a warehouse and no answers.
+Write it as a sentence: "By March we must decide whether to double down on outbound or move the budget to content." Every event and report either serves that decision or is deferred — the constraint that keeps a tracking plan at twelve events instead of ninety. If you cannot write the sentence, stop; instrumenting without a decision produces a warehouse and no answers.
 
 ### Move 2 — Instrument in this order, not in parallel
 
@@ -61,7 +61,7 @@ Threshold: twelve events before launch, hard cap. Above twelve, the team has not
 
 One naming guide, lowercase, no spaces, one shared builder, one owner who can veto ad-hoc parameters. Source is the platform, medium is the mechanism, campaign carries period and segment. Clerical, unglamorous, and the entire difference between a channel report and a mess.
 
-Then be honest about the limits. Click attribution measures the last cheap thing that happened before a decision that took eleven weeks. Add a free-text "how did you hear about us" field at signup and treat it as a corrective, not a supplement — when the two disagree systematically, the truth is closer to self-reported, and paid is taking credit for demand that content and word of mouth created.
+Then be honest about the limits. Click attribution measures the last cheap thing before a decision that took eleven weeks. Add a free-text "how did you hear about us" field at signup as a corrective, not a supplement — when the two disagree systematically, paid is taking credit for demand that content and word of mouth created.
 
 Decision rule: click attribution for optimization inside a channel; self-reported plus incrementality tests — turn a channel off for two weeks and watch total volume — for allocation between channels.
 
@@ -75,6 +75,14 @@ Non-negotiable deal fields: expected value, stage, next action with date and own
 
 Hypothesis in one sentence: if we change X for segment Y, metric Z moves N% because of evidence E. Score the backlog on potential lift, traffic importance, and ease; average the three; run the top item. Set sample size and end date before launching, minimum two weeks to cover weekday variation. Peeking is allowed; stopping early because it looks good is not.
 
+### Move 7 — Route product usage into the pipeline without lowering the evidence bar
+
+In self-serve or trial-led motions, usage inside the product is evidence too, sometimes better than anything a buyer says, because it is observed rather than reported. Define one usage threshold that has historically preceded conversion or expansion in your own data, not a borrowed benchmark: the activation event reached inside a set window, a plan limit hit, or the core action repeated enough to look habitual rather than accidental. Route accounts that cross it into three lanes: a self-serve nudge if usage stays inside plan limits, a sales or customer-success alert if a limit was hit or a second seat activated, and a paid implementation offer if usage signals a team large enough to need onboarding the software alone will not deliver.
+
+This does not relax Move 5's rule. A usage threshold earns a pipeline entry, not a stage advance; the account still needs buyer-confirmed evidence before it moves past qualification. Treat the two evidence types as sequential gates, not substitutes, or the forecast fills with accounts that used a feature once and never spoke to anyone.
+
+**Threshold:** if fewer than one in four routed accounts convert to a qualified conversation, the usage threshold is too loose and is routing curiosity, not intent.
+
 ## Metrics that mislead, by stage
 
 | Stage | The metric that misleads | Why it lies | Watch instead |
@@ -86,6 +94,7 @@ Hypothesis in one sentence: if we change X for segment Y, metric Z moves N% beca
 | Scale | LTV:CAC | LTV built on an assumed churn rate you have not yet observed for a full year | CAC payback period in months — observable, not projected |
 | Scale | MoM MRR growth | One-time services and annual prepayments smuggled into recurring | Net revenue retention on cohorts twelve months old |
 | Scale | Aggregate churn | Hides that your best segment is stable while an unfit segment leaves | Churn by acquisition channel and by segment |
+| Scale (PLG) | Product-qualified-lead count | Rises with any change to the usage threshold, not with real buying intent | PQL-to-qualified-conversation conversion rate |
 
 ## Failure modes
 
@@ -101,6 +110,8 @@ Hypothesis in one sentence: if we change X for segment Y, metric Z moves N% beca
 
 **Instrumenting after launch** — tracking is deferred until things stabilize, so the launch cohort, the most informative one the company will ever have, is analytically dark. The tell: "we'll add that next sprint," said the week before shipping. → Layers 1-3 are launch blockers, same severity class as a broken checkout.
 
+**Usage theater** — a dashboard tracks "product-qualified leads" that nobody in sales trusts enough to call. The tell: the PQL count never appears in the weekly pipeline review from Move 5. → Enforce Move 7's one-in-four conversion threshold and audit it monthly; retire the signal if it fails twice running.
+
 ## Outputs
 
 - Tracking plan: up to twelve events with trigger conditions and properties, plus the user-trait list sent on identify
@@ -110,6 +121,7 @@ Hypothesis in one sentence: if we change X for segment Y, metric Z moves N% beca
 - Weekly dashboard spec: metric, source, owner, and the decision it informs
 - Experiment backlog with hypothesis, sample size, duration, and stop rule per item
 - Pre-launch instrumentation checklist with go/no-go status
+- Usage threshold and three-lane routing rule for product-led motions
 
 ## Pairs with
 
@@ -120,4 +132,4 @@ Hypothesis in one sentence: if we change X for segment Y, metric Z moves N% beca
 
 ## Lineage
 
-The funnel decomposition traces to Dave McClure's pirate metrics; the experiment cadence to Sean Ellis and Morgan Brown in *Hacking Growth*; the actionable-versus-vanity distinction to Eric Ries in *The Lean Startup*; the potential-importance-ease scoring to Chris Goward's conversion optimization work. Where this articulation departs: those frameworks describe what to measure, and this specifies an implementation order based on recoverability — which data can be rebuilt later and which is gone forever — and names, per stage, the metric that reliably misleads. That CAC payback beats LTV:CAC before you have observed a full year of churn is an operating position, not a standard one.
+The funnel decomposition traces to Dave McClure's pirate metrics; the experiment cadence to Sean Ellis and Morgan Brown in *Hacking Growth*; the actionable-versus-vanity distinction to Eric Ries in *The Lean Startup*; the potential-importance-ease scoring to Chris Goward's conversion work. This articulation departs by specifying an implementation order based on recoverability — which data can be rebuilt later and which is gone forever — and by naming, per stage, the metric that reliably misleads. That CAC payback beats LTV:CAC before a full year of churn is observed is an operating position, not a standard one; Move 7's evidence hierarchy is the same position applied to product-led pipelines.

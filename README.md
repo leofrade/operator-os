@@ -4,10 +4,10 @@
 
 **The business half of an AI-native founder's toolkit.**
 
-43 executable skills for Claude Code, Claude, Cursor, and any agent that reads Markdown —
+45 executable skills for Claude Code, Claude, Cursor, and any agent that reads Markdown —
 covering discovery, strategy, go-to-market, enterprise sales, operations, and brand.
 
-[![Skills](https://img.shields.io/badge/skills-43-0d1117?style=flat-square)](#the-library)
+[![Skills](https://img.shields.io/badge/skills-45-0d1117?style=flat-square)](#the-library)
 [![Domains](https://img.shields.io/badge/domains-6-0d1117?style=flat-square)](#the-library)
 [![License](https://img.shields.io/badge/docs-CC--BY--4.0-0d1117?style=flat-square)](LICENSE)
 [![Format](https://img.shields.io/badge/format-SKILL.md-0d1117?style=flat-square)](#anatomy-of-a-skill)
@@ -66,7 +66,7 @@ mkdir -p .claude/skills
 cp -R operator-os/skills/*/* .claude/skills/
 ```
 
-Both commands flatten the six domain folders into 43 skill folders, which is the layout
+Both commands flatten the six domain folders into 45 skill folders, which is the layout
 agents expect. One consequence worth knowing: the relative paths in each file's
 **Pairs with** section stop resolving as links once flattened. The names still do their
 job — every entry is written as `domain/skill-name`, so the agent can find the sibling —
@@ -133,7 +133,7 @@ Example, from [`brand/positioning`](skills/brand/positioning/SKILL.md):
 
 ## The library
 
-43 skills across six domains. Stage tags: `pre-pmf`, `gtm`, `scale`, `any`.
+45 skills across six domains. Stage tags: `pre-pmf`, `gtm`, `scale`, `any`.
 
 ### Discovery — before you have product/market fit
 
@@ -176,6 +176,7 @@ Example, from [`brand/positioning`](skills/brand/positioning/SKILL.md):
 | [`lead-engine`](skills/gtm/lead-engine/SKILL.md) | Picks the one acquisition channel your stage can actually sustain, sets the volume and efficiency thresholds that prove it works, and defines the bait that attracts buyers instead of spectators | Alex Hormozi — $100M Leads |
 | [`monetization-model`](skills/gtm/monetization-model/SKILL.md) | Designs the sequence of offers around a first sale so that cash collected in the first 30 days exceeds the cost of acquiring and serving the customer | Alex Hormozi — $100M Money Models |
 | [`offer-design`](skills/gtm/offer-design/SKILL.md) | Rebuilds a commoditized offer into a priced package that cannot be line-item compared, by inventorying the buyer's friction and engineering the gap between perceived value and price | Alex Hormozi — $100M Offers |
+| [`partner-engine`](skills/gtm/partner-engine/SKILL.md) | Wins distribution by borrowing an audience someone else already built — mapping the specific people and communities that already hold your buyer's trust, earning entry before asking for anything, and choosing between paying for access and earning it | Chet Holmes — The Ultimate Sales Machine (Dream 100 prospecting) |
 | [`pricing-power`](skills/gtm/pricing-power/SKILL.md) | Sets price from evidence of what buyers will pay rather than from competitor averages or cost-plus, by choosing the billing unit first, gathering willingness-to-pay signal at a method appropriate to sample size, and packaging into tiers with a single upgrade gate | Madhavan Ramanujam & Georg Tacke — Monetizing Innovation; Peter van Westendorp — Price Sensitivity Meter; André Gabor & Clive Granger — price-response research |
 
 ### Revenue — enterprise sales execution
@@ -204,6 +205,7 @@ Example, from [`brand/positioning`](skills/brand/positioning/SKILL.md):
 | Skill | What it decides | Lineage |
 |---|---|---|
 | [`design-systems`](skills/brand/design-systems/SKILL.md) | Decides whether a design system is justified yet, then builds one as three token tiers, a small set of components with deliberate APIs, and a governance contract covering contribution and deprecation | Brad Frost — Atomic Design; Alla Kholmatova — Design Systems; Josef Müller-Brockmann — Grid Systems; Alina Wheeler — Designing Brand Identity |
+| [`founder-narrative`](skills/brand/founder-narrative/SKILL.md) | Builds the founder or spokesperson identity a company runs consistently across content, sales, and lifecycle email — a real backstory, a stated position, and an origin story shaped so a stranger reaches your conclusion by living the discovery themselves | Direct-response funnel literature, 2010s; Joseph Campbell — The Hero with a Thousand Faces |
 | [`positioning`](skills/brand/positioning/SKILL.md) | Rebuilds the market context a buyer uses to judge your product, by sequencing competitive alternatives, unique attributes, value themes, best-fit segment, and market category — then testing whether the result is load-bearing or a slogan | Al Ries & Jack Trout — Positioning; April Dunford — Obviously Awesome |
 | [`presentation-craft`](skills/brand/presentation-craft/SKILL.md) | Builds a presentation by first deciding whether the artifact is a document to be read or slides to be presented, then structuring the argument, enforcing one idea per slide, and rehearsing against objections rather than script | Nancy Duarte — Resonate / slide:ology; Barbara Minto — The Pyramid Principle; Garr Reynolds — Presentation Zen |
 | [`purpose-narrative`](skills/brand/purpose-narrative/SKILL.md) | Extracts a company's operating belief from its actual history, tests it for falsifiability, and reorders the story so belief precedes method precedes product — then audits whether incentives contradict the stated purpose | Simon Sinek — Start With Why |

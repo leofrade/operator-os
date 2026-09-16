@@ -114,6 +114,7 @@ Once a channel produces predictable output at an acceptable ratio, multiply it t
 - [`gtm/gtm-measurement`](../../gtm/gtm-measurement/SKILL.md) — the instrumentation behind the ratio and payback numbers.
 - [`gtm/audience-engine`](../../gtm/audience-engine/SKILL.md) — for the content channel, once it is the chosen one.
 - [`revenue/deal-qualification`](../../revenue/deal-qualification/SKILL.md) — defines what counts as qualified, without which the thresholds here are meaningless.
+- [`gtm/partner-engine`](../partner-engine/SKILL.md) — a fifth channel outside this taxonomy: borrowing an audience someone else already built instead of buying or growing one.
 
 ## Lineage
 

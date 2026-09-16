@@ -126,6 +126,7 @@ At month nine, with the full sample in hand, decide once: continue, rebase the a
 - [`gtm/lead-engine`](../../gtm/lead-engine/SKILL.md) — decides whether audience-building is the right channel at all, and runs the outbound motion that carries you until it ignites.
 - [`gtm/headline-craft`](../../gtm/headline-craft/SKILL.md) — supplies the entry point for each piece; a strong angle still dies behind a weak first line.
 - [`gtm/gtm-measurement`](../../gtm/gtm-measurement/SKILL.md) — keeps the subscriber metric honest and connects it to pipeline without collapsing into attribution theater.
+- [`gtm/partner-engine`](../partner-engine/SKILL.md) — the faster route to the same distribution outcome when the buyer is concentrated enough to name individually; run before this one if it applies.
 
 ## Lineage
 

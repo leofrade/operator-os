@@ -6,10 +6,10 @@ Each subdirectory is a domain; each skill is a folder containing `SKILL.md`.
 skills/
 ├── discovery/     8 skills — before product/market fit
 ├── strategy/      9 skills — what game you are playing
-├── gtm/          11 skills — demand, launch, price
+├── gtm/          12 skills — demand, launch, price
 ├── revenue/       6 skills — enterprise sales execution
 ├── operations/    5 skills — running the company
-└── brand/         4 skills — positioning and communication
+└── brand/         5 skills — positioning and communication
 ```
 
 Skills are self-contained. Copying a single folder into your agent's skills directory
