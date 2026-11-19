@@ -1,0 +1,26 @@
+version: "1.0"
+
+worktree:
+  sharedDirectories:
+    - node_modules
+    - .cache
+    - dist
+    - .next
+    - .venv
+
+scripts:
+  setup: |
+    mise install
+    pnpm install --frozen-lockfile 2>/dev/null || pnpm install || true
+  archive: |
+    pnpm store prune 2>/dev/null || true
+
+quickCommands:
+  - label: "Bateria Completa de Testes"
+    command: "pnpm test"
+  - label: "Auditoria Estática de Tipos"
+    command: "pnpm typecheck && pnpm lint"
+  - label: "Revisão Arquitetural de Mudanças"
+    action: "agent-prompt"
+    agent: "claude"
+    prompt: "Compare as alterações deste worktree contra o branch origin/main e elenque riscos funcionais ou quebras de abstração."
